@@ -36,18 +36,17 @@
       </div>
       <!-- end loader -->
       <!-- header -->
-      <header style="position: fixed; width: 100%; padding-bottom: 30px; height: 100px; z-index: 100000006; top: 0%;">
+      <header style="position: fixed;
+      width: 100%;
+      z-index: 99999999;">
          <!-- header inner -->
-         <div class="header">
+         <div class="header" style="height: 100%;">
             <div class="container">
                <div class="row">
                
                   <div class="col">
                      <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarsExample04" style="text-align: center;">
+                        <div class="navbar-collapse" id="navbarsExample04" style="text-align: center;">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item active">
                                  <a class="nav-link" href="#shopiStores">חנות אונליין</a>
@@ -69,7 +68,8 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <a href="index.html"><img src="images/logo.png" alt="#" style="    width: 34%;
+                                 <a href="index.html"><img id="logoimg" src="images/logo.png" alt="#" style="
+                                     width: 34%;
                                  left: 0px;
                                  position: fixed;" /></a>
                            </div>
@@ -85,7 +85,7 @@
       <!-- banner -->
       <section class="banner_main">
          <div class="container">
-            <div class="row d_flex" style="padding-top: 13%;">
+            <div id="mainCont" class="row d_flex" style="padding-top: 13%;">
                <div class="col-md-5">
                   <div class="text-bg" style="text-align: right;;">
                      <h1>חנויות שופיפיי<br>מצליחות</h1>
@@ -259,5 +259,49 @@
       <script src="js/custom.js"></script>
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
    </body>
+   <style>
+   @media only screen and (max-width: 900px) {
+      #navbarsExample04 > ul > li > a {
+        color: white;
+    }
+    #navbarsExample04 > ul > li:nth-child(1) {
+      color: white;
+        position: fixed;
+        top: 5%;
+        right: 5%;
+        width: 10px;
+    }
+    #navbarsExample04 > ul > li:nth-child(2) {
+      color: white;
+        position: fixed;
+        top: 5%;
+        right: 30%;
+        width: 10px;
+    }
+    #navbarsExample04 > ul > li:nth-child(3) {
+      color: white;
+        position: fixed;
+        top: 5%;
+        right: 55%;
+        width: 10px;
+    }
+    #navbarsExample04 > ul > li:nth-child(4) {
+      color: white;
+        position: fixed;
+        top: 5%;
+        right: 85%;
+        width: 10px;
+    }
+    #mainCont {
+       padding-top: 36% !important;
+    }
+    #logoimg {
+      width: 90% !important;
+    top: 0px !important;
+    position: fixed !important;
+    left: 5% !important;
+   }
+   }
+   </style>
 </html>
 
